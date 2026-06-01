@@ -1,0 +1,464 @@
+[
+    {
+        "name": "Aurora Beam",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 65,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "statReduction", "target": "opponent", "stat": "attack", "stages": -1, "chance": 0.1 }
+        ],
+        "movePP": 20,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Aurora Veil",
+        "TMnumber": 0,
+        "moveType": "Status",
+        "movePower": 0,
+        "moveAccuracy": null,
+        "moveCriticalChance": 0,
+        "moveEffects": [
+            { "type": "screen", "screen": "aurora", "duration": 5 }
+        ],
+        "movePP": 20,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "field",
+        "neverMiss": true
+    },
+    {
+        "name": "Avalanche",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 60,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "doublePowerIfHitLastTurn" }
+        ],
+        "movePP": 10,
+        "priority": -4,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Blizzard",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 110,
+        "moveAccuracy": 70,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "status", "status": "freeze", "chance": 0.1 },
+            { "type": "neverMissInWeather", "weather": "hail" }
+        ],
+        "movePP": 5,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "allOpponents",
+        "neverMiss": false
+    },
+    {
+        "name": "Freeze Shock",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 140,
+        "moveAccuracy": 90,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "chargeTurn" },
+            { "type": "status", "status": "paralysis", "chance": 0.3 }
+        ],
+        "movePP": 5,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Freeze-Dry",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 70,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "superEffectiveAgainstWater" }
+        ],
+        "movePP": 20,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Freezy Frost",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 100,
+        "moveAccuracy": 90,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "resetAllStats" }
+        ],
+        "movePP": 15,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "all",
+        "neverMiss": false
+    },
+    {
+        "name": "Frost Breath",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 60,
+        "moveAccuracy": 90,
+        "moveCriticalChance": 1,
+        "moveEffects": [],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Glacial Lance",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 130,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [],
+        "movePP": 5,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "allOpponents",
+        "neverMiss": false
+    },
+    {
+        "name": "Glaciate",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 65,
+        "moveAccuracy": 95,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "statReduction", "target": "allOpponents", "stat": "speed", "stages": -1 }
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "allOpponents",
+        "neverMiss": false
+    },
+    {
+        "name": "Hail",
+        "TMnumber": 0,
+        "moveType": "Status",
+        "movePower": 0,
+        "moveAccuracy": null,
+        "moveCriticalChance": 0,
+        "moveEffects": [
+            { "type": "weather", "weather": "hail", "duration": 5 }
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "field",
+        "neverMiss": true
+    },
+    {
+        "name": "Haze",
+        "TMnumber": 0,
+        "moveType": "Status",
+        "movePower": 0,
+        "moveAccuracy": null,
+        "moveCriticalChance": 0,
+        "moveEffects": [
+            { "type": "resetAllStats", "target": "all" }
+        ],
+        "movePP": 30,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "field",
+        "neverMiss": true
+    },
+    {
+        "name": "Ice Ball",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 30,
+        "moveAccuracy": 90,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "rollingMove", "maxStages": 5 }
+        ],
+        "movePP": 20,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Ice Beam",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 90,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "status", "status": "freeze", "chance": 0.1 }
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Ice Burn",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 140,
+        "moveAccuracy": 90,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "chargeTurn" },
+            { "type": "status", "status": "burn", "chance": 0.3 }
+        ],
+        "movePP": 5,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Ice Fang",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 65,
+        "moveAccuracy": 95,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "status", "status": "freeze", "chance": 0.1 },
+            { "type": "flinch", "target": "opponent", "chance": 0.1 }
+        ],
+        "movePP": 15,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Ice Hammer",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 100,
+        "moveAccuracy": 90,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "statReduction", "target": "self", "stat": "speed", "stages": -1 }
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Ice Punch",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 75,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "status", "status": "freeze", "chance": 0.1 }
+        ],
+        "movePP": 15,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Ice Shard",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 40,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [],
+        "movePP": 30,
+        "priority": 1,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Ice Spinner",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 80,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "removeTerrain" }
+        ],
+        "movePP": 15,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Icicle Crash",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 85,
+        "moveAccuracy": 90,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "flinch", "target": "opponent", "chance": 0.3 }
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Icicle Spear",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 25,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "multiHitVariable", "minHits": 2, "maxHits": 5 }
+        ],
+        "movePP": 30,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Icy Wind",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 55,
+        "moveAccuracy": 95,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "statReduction", "target": "allOpponents", "stat": "speed", "stages": -1 }
+        ],
+        "movePP": 15,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "allOpponents",
+        "neverMiss": false
+    },
+    {
+        "name": "Mist",
+        "TMnumber": 0,
+        "moveType": "Status",
+        "movePower": 0,
+        "moveAccuracy": null,
+        "moveCriticalChance": 0,
+        "moveEffects": [
+            { "type": "protectStats", "target": "allAllies", "duration": 5 }
+        ],
+        "movePP": 30,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "field",
+        "neverMiss": true
+    },
+    {
+        "name": "Mountain Gale",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 120,
+        "moveAccuracy": 85,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "flinch", "target": "opponent", "chance": 0.2 }
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Powder Snow",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 40,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "status", "status": "freeze", "chance": 0.1 }
+        ],
+        "movePP": 25,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "allOpponents",
+        "neverMiss": false
+    },
+    {
+        "name": "Sheer Cold",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 0,
+        "moveAccuracy": 30,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "oneHitKO" }
+        ],
+        "movePP": 5,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Snowscape",
+        "TMnumber": 0,
+        "moveType": "Status",
+        "movePower": 0,
+        "moveAccuracy": null,
+        "moveCriticalChance": 0,
+        "moveEffects": [
+            { "type": "weather", "weather": "snow", "duration": 5 }
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "field",
+        "neverMiss": true
+    },
+    {
+        "name": "Triple Axel",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 20,
+        "moveAccuracy": 90,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "multiHitFixed", "hits": 3, "powerScaling": true }
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    }
+]

@@ -1,0 +1,591 @@
+[
+    {
+        "name": "Armor Cannon",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 120,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            {"type": "statReduction", "target": "self", "stat": "defense", "stages": -1},
+            {"type": "statReduction", "target": "self", "stat": "specialDefense", "stages": -1}
+        ],
+        "movePP": 5,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Bitter Blade",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 90,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            {"type": "drain", "target": "self", "amount": 0.5}
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Blast Burn",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 150,
+        "moveAccuracy": 90,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            {"type": "recharge", "target": "self", "duration": 1}
+        ],
+        "movePP": 5,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Blaze Kick",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 85,
+        "moveAccuracy": 90,
+        "moveCriticalChance": 0.125,
+        "moveEffects": [
+            {"type": "status", "status": "burn", "chance": 0.1}
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Blazing Torque",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 80,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            {"type": "status", "status": "burn", "chance": 0.3}
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },{
+        "name": "Blue Flare",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 130,
+        "moveAccuracy": 85,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            {"type": "status", "status": "burn", "chance": 0.2}
+        ],
+        "movePP": 5,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Burning Jealousy",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 70,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [{"type": "flinch","target": "opponent","chance": 1},{"condition": "targetBoostedStatsThisTurn"}],
+        "movePP": 5,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "allOpponents",
+        "neverMiss": false
+    },
+    {
+        "name": "Ember",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 40,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            {"type": "status", "status": "burn", "chance": 0.1}
+        ],
+        "movePP": 25,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Eruption",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 150,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            {"type": "powerScaling", "scaleWith": "userHP"}
+        ],
+        "movePP": 5,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "allOpponents",
+        "neverMiss": false
+    },
+    {
+        "name": "Fiery Dance",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 80,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            {"type": "statBoost", "target": "self", "stat": "specialAttack", "stages": 1, "chance": 0.5}
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },{
+        "name": "Fire Blast",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 110,
+        "moveAccuracy": 85,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            {"type": "status", "status": "burn", "chance": 0.1}
+        ],
+        "movePP": 5,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Fire Fang",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 65,
+        "moveAccuracy": 95,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            {"type": "status", "status": "burn", "chance": 0.1},
+            {"type": "flinch", "target": "opponent", "chance": 0.1}
+        ],
+        "movePP": 15,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Fire Lash",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 80,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            {"type": "statReduction", "target": "opponent", "stat": "defense", "stages": -1, "chance": 1}
+        ],
+        "movePP": 15,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Fire Pledge",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 80,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            {"type": "", "target": "", "amount": 0, "duration": 0}
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Fire Punch",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 75,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            {"type": "status", "status": "burn", "chance": 0.1}
+        ],
+        "movePP": 15,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },{
+        "name": "Fire Spin",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 35,
+        "moveAccuracy": 85,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            {"type": "trap", "target": "opponent", "duration": 4, "damagePerTurn": 0.125}
+        ],
+        "movePP": 15,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Flame Charge",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 50,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            {"type": "statBoost", "target": "self", "stat": "speed", "stages": 1, "chance": 1}
+        ],
+        "movePP": 20,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Flame Wheel",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 60,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            {"type": "status", "status": "burn", "chance": 0.1},
+            {"type": "specialEffect", "effect": "thawUser"}
+        ],
+        "movePP": 25,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Flamethrower",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 90,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            {"type": "status", "status": "burn", "chance": 0.1}
+        ],
+        "movePP": 15,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Flare Blitz",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 120,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            {"type": "recoil", "target": "self", "amount": 0.33},
+            {"type": "status", "status": "burn", "chance": 0.1},
+            {"type": "specialEffect", "effect": "thawUser"}
+        ],
+        "movePP": 15,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },{
+        "name": "Fusion Flare",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 100,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            {"type": "specialEffect", "effect": "doublePowerIfFusionBoltUsed"}
+        ],
+        "movePP": 5,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Heat Crash",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 0,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            {"type": "powerScaling", "scaleWith": "weightRatio"}
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Heat Wave",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 95,
+        "moveAccuracy": 90,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            {"type": "status", "status": "burn", "chance": 0.1}
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "allOpponents",
+        "neverMiss": false
+    },
+    {
+        "name": "Incinerate",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 60,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            {"type": "destroyItem", "target": "opponent"}
+        ],
+        "movePP": 15,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "allOpponents",
+        "neverMiss": false
+    },
+    {
+        "name": "Inferno",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 100,
+        "moveAccuracy": 50,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            {"type": "status", "status": "burn", "chance": 1}
+        ],
+        "movePP": 5,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },{
+        "name": "Lava Plume",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 80,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            {"type": "status", "status": "burn", "chance": 0.3}
+        ],
+        "movePP": 15,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "allOpponents",
+        "neverMiss": false
+    },
+    {
+        "name": "Magma Storm",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 100,
+        "moveAccuracy": 75,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            {"type": "trap", "target": "opponent", "duration": 4, "damagePerTurn": 0.1875}
+        ],
+        "movePP": 5,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "allOpponents",
+        "neverMiss": false
+    },
+    {
+        "name": "Mystical Fire",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 65,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            {"type": "statReduction", "target": "opponent", "stat": "specialAttack", "stages": -1, "chance": 1}
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Overheat",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 130,
+        "moveAccuracy": 90,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            {"type": "statReduction", "target": "self", "stat": "specialAttack", "stages": -2, "chance": 1}
+        ],
+        "movePP": 5,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Pyro Ball",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 120,
+        "moveAccuracy": 90,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            {"type": "status", "status": "burn", "chance": 0.1}
+        ],
+        "movePP": 5,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },{
+        "name": "Sacred Fire",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 100,
+        "moveAccuracy": 95,
+        "moveCriticalChance": 0.1,
+        "moveEffects": [
+            {"type": "status", "status": "burn", "chance": 0.5}
+        ],
+        "movePP": 5,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Shell Trap",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 150,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            {"type": "condition", "condition": "hitByAttackFirstTurnOnly"}
+        ],
+        "movePP": 5,
+        "priority": -3,
+        "makesContact": false,
+        "targetType": "allOpponents",
+        "neverMiss": false
+    },
+    {
+        "name": "Sizzly Slide",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 90,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            {"type": "status", "status": "burn", "chance": 0.2}
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Sunny Day",
+        "TMnumber": 0,
+        "moveType": "Status",
+        "movePower": 0,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0,
+        "moveEffects": [
+            {"type": "weather", "weatherType": "sun", "duration": 5}
+        ],
+        "movePP": 5,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "all",
+        "neverMiss": true
+    },
+    {
+        "name": "Temper Flare",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 70,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            {"type": "statBoost", "target": "self", "stat": "specialAttack", "stages": 1, "chance": 1}
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Torch Song",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 80,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            {"type": "statBoost", "target": "self", "stat": "specialAttack", "stages": 1, "chance": 1}
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Will-o-Wisp",
+        "TMnumber": 0,
+        "moveType": "Status",
+        "movePower": 0,
+        "moveAccuracy": 85,
+        "moveCriticalChance": 0,
+        "moveEffects": [
+            {"type": "status", "status": "burn", "chance": 1}
+        ],
+        "movePP": 15,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    }
+]

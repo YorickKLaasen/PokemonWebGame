@@ -1,0 +1,774 @@
+[
+    {
+        "name": "Arm Thrust",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 15,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "multiHitVariable", "minHits": 2, "maxHits": 5 }
+        ],
+        "movePP": 20,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Aura Sphere",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 80,
+        "moveAccuracy": null,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [],
+        "movePP": 20,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": true
+    },
+    {
+        "name": "Axe Kick",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 120,
+        "moveAccuracy": 90,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "crashIfMiss", "damageFraction": 0.5 },
+            { "type": "flinch", "target": "opponent", "chance": 0.3 }
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Body Press",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 80,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "useDefenseForDamage" }
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Brick Break",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 75,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "breakScreens" }
+        ],
+        "movePP": 15,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Bulk Up",
+        "TMnumber": 0,
+        "moveType": "Status",
+        "movePower": 0,
+        "moveAccuracy": null,
+        "moveCriticalChance": 0,
+        "moveEffects": [
+            { "type": "statBoost", "target": "self", "stat": "attack", "stages": 1 },
+            { "type": "statBoost", "target": "self", "stat": "defense", "stages": 1 }
+        ],
+        "movePP": 20,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "self",
+        "neverMiss": true
+    },
+    {
+        "name": "Circle Throw",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 60,
+        "moveAccuracy": 90,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "forceSwitch" }
+        ],
+        "movePP": 10,
+        "priority": -6,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Close Combat",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 120,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "statReduction", "target": "self", "stat": "defense", "stages": -1 },
+            { "type": "statReduction", "target": "self", "stat": "specialDefense", "stages": -1 }
+        ],
+        "movePP": 5,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Coaching",
+        "TMnumber": 0,
+        "moveType": "Status",
+        "movePower": 0,
+        "moveAccuracy": null,
+        "moveCriticalChance": 0,
+        "moveEffects": [
+            { "type": "statBoost", "target": "allAllies", "stat": "attack", "stages": 1 },
+            { "type": "statBoost", "target": "allAllies", "stat": "defense", "stages": 1 }
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "allAllies",
+        "neverMiss": true
+    },
+    {
+        "name": "Collision Course",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 100,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "boostIfSuperEffective", "multiplier": 1.333 }
+        ],
+        "movePP": 5,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Combat Torque",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 100,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "status", "status": "paralysis", "chance": 0.3 }
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Counter",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 0,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "counterPhysical", "multiplier": 2 }
+        ],
+        "movePP": 20,
+        "priority": -5,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Cross Chop",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 100,
+        "moveAccuracy": 80,
+        "moveCriticalChance": 0.125,
+        "moveEffects": [],
+        "movePP": 5,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Detect",
+        "TMnumber": 0,
+        "moveType": "Status",
+        "movePower": 0,
+        "moveAccuracy": null,
+        "moveCriticalChance": 0,
+        "moveEffects": [
+            { "type": "protect" }
+        ],
+        "movePP": 5,
+        "priority": 4,
+        "makesContact": false,
+        "targetType": "self",
+        "neverMiss": true
+    },
+    {
+        "name": "Double Kick",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 30,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "multiHitFixed", "hits": 2 }
+        ],
+        "movePP": 30,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Drain Punch",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 75,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "drain", "target": "self", "amount": 0.5 }
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Dynamic Punch",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 100,
+        "moveAccuracy": 50,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "status", "status": "confusion", "chance": 1 }
+        ],
+        "movePP": 5,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Final Gambit",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 0,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "selfKO" },
+            { "type": "damageEqualToCurrentHP" }
+        ],
+        "movePP": 5,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Focus Blast",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 120,
+        "moveAccuracy": 70,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "statReduction", "target": "opponent", "stat": "specialDefense", "stages": -1, "chance": 0.1 }
+        ],
+        "movePP": 5,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Focus Punch",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 150,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "failIfHitBeforeMoving" }
+        ],
+        "movePP": 20,
+        "priority": -3,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Force Palm",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 60,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "status", "status": "paralysis", "chance": 0.3 }
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Hammer Arm",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 100,
+        "moveAccuracy": 90,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "statReduction", "target": "self", "stat": "speed", "stages": -1 }
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "High Jump Kick",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 130,
+        "moveAccuracy": 90,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "crashIfMiss", "damageFraction": 0.5 }
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Karate Chop",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 50,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.125,
+        "moveEffects": [],
+        "movePP": 25,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Low Kick",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 0,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "powerBasedOnWeight" }
+        ],
+        "movePP": 20,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Low Sweep",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 65,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "statReduction", "target": "opponent", "stat": "speed", "stages": -1 }
+        ],
+        "movePP": 20,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Mach Punch",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 40,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [],
+        "movePP": 30,
+        "priority": 1,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Meteor Assault",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 150,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "recharge", "target": "self", "duration": 1 }
+        ],
+        "movePP": 5,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "No Retreat",
+        "TMnumber": 0,
+        "moveType": "Status",
+        "movePower": 0,
+        "moveAccuracy": null,
+        "moveCriticalChance": 0,
+        "moveEffects": [
+            { "type": "preventSwitching", "target": "self" },
+            { "type": "statBoost", "target": "self", "stat": "attack", "stages": 1 },
+            { "type": "statBoost", "target": "self", "stat": "defense", "stages": 1 },
+            { "type": "statBoost", "target": "self", "stat": "specialAttack", "stages": 1 },
+            { "type": "statBoost", "target": "self", "stat": "specialDefense", "stages": 1 },
+            { "type": "statBoost", "target": "self", "stat": "speed", "stages": 1 }
+        ],
+        "movePP": 5,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "self",
+        "neverMiss": true
+    },
+    {
+        "name": "Octolock",
+        "TMnumber": 0,
+        "moveType": "Status",
+        "movePower": 0,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0,
+        "moveEffects": [
+            { "type": "trap" },
+            { "type": "statReductionEachTurn", "target": "opponent", "stat": "defense", "stages": -1 },
+            { "type": "statReductionEachTurn", "target": "opponent", "stat": "specialDefense", "stages": -1 }
+        ],
+        "movePP": 15,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Power-Up Punch",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 40,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "statBoost", "target": "self", "stat": "attack", "stages": 1 }
+        ],
+        "movePP": 20,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Quick Guard",
+        "TMnumber": 0,
+        "moveType": "Status",
+        "movePower": 0,
+        "moveAccuracy": null,
+        "moveCriticalChance": 0,
+        "moveEffects": [
+            { "type": "protectFromPriority", "target": "allAllies", "duration": 1 }
+        ],
+        "movePP": 15,
+        "priority": 3,
+        "makesContact": false,
+        "targetType": "allAllies",
+        "neverMiss": true
+    },
+    {
+        "name": "Revenge",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 60,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "doublePowerIfHitLastTurn" }
+        ],
+        "movePP": 10,
+        "priority": -4,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Reversal",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 0,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "powerBasedOnLowHP" }
+        ],
+        "movePP": 15,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Rock Smash",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 40,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "statReduction", "target": "opponent", "stat": "defense", "stages": -1, "chance": 0.5 }
+        ],
+        "movePP": 15,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Sacred Sword",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 90,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "ignoreTargetStatChanges" }
+        ],
+        "movePP": 15,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Secret Sword",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 85,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "targetDefenseInsteadOfSpecialDefense" }
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Seismic Toss",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 0,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "damageEqualToLevel" }
+        ],
+        "movePP": 20,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Sky Uppercut",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 85,
+        "moveAccuracy": 90,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "hitFlyingTargets" }
+        ],
+        "movePP": 15,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Storm Throw",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 60,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 1,
+        "moveEffects": [
+            { "type": "alwaysCritical" }
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Submission",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 80,
+        "moveAccuracy": 80,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "recoil", "target": "self", "amount": 0.25 }
+        ],
+        "movePP": 20,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Superpower",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 120,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "statReduction", "target": "self", "stat": "attack", "stages": -1 },
+            { "type": "statReduction", "target": "self", "stat": "defense", "stages": -1 }
+        ],
+        "movePP": 5,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Thunderous Kick",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 90,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "statReduction", "target": "opponent", "stat": "defense", "stages": -1 }
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Triple Arrows",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 90,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.125,
+        "moveEffects": [
+            { "type": "statReduction", "target": "opponent", "stat": "defense", "stages": -1, "chance": 0.5 },
+            { "type": "flinch", "target": "opponent", "chance": 0.3 }
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Triple Kick",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 10,
+        "moveAccuracy": 90,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "multiHitFixed", "hits": 3, "powerScaling": true }
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Vacuum Wave",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 40,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [],
+        "movePP": 30,
+        "priority": 1,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Victory Dance",
+        "TMnumber": 0,
+        "moveType": "Status",
+        "movePower": 0,
+        "moveAccuracy": null,
+        "moveCriticalChance": 0,
+        "moveEffects": [
+            { "type": "statBoost", "target": "self", "stat": "attack", "stages": 1 },
+            { "type": "statBoost", "target": "self", "stat": "defense", "stages": 1 },
+            { "type": "statBoost", "target": "self", "stat": "speed", "stages": 1 }
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "self",
+        "neverMiss": true
+    },
+    {
+        "name": "Vital Throw",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 70,
+        "moveAccuracy": null,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [],
+        "movePP": 10,
+        "priority": -1,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": true
+    }
+]

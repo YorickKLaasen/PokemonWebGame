@@ -1,0 +1,657 @@
+[
+    {
+        "name": "Aura Wheel",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 110,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "statBoost", "target": "self", "stat": "speed", "stages": 1 }
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Bolt Beak",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 85,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "doublePowerIfFirst" }
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Bolt Strike",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 130,
+        "moveAccuracy": 85,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "status", "status": "paralysis", "chance": 0.2 }
+        ],
+        "movePP": 5,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Buzzy Buzz",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 60,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "status", "status": "paralysis", "chance": 1 }
+        ],
+        "movePP": 20,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Charge",
+        "TMnumber": 0,
+        "moveType": "Status",
+        "movePower": 0,
+        "moveAccuracy": null,
+        "moveCriticalChance": 0,
+        "moveEffects": [
+            { "type": "statBoost", "target": "self", "stat": "specialDefense", "stages": 1 },
+            { "type": "chargeNextElectricMove" }
+        ],
+        "movePP": 20,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "self",
+        "neverMiss": true
+    },
+    {
+        "name": "Charge Beam",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 50,
+        "moveAccuracy": 90,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "statBoost", "target": "self", "stat": "specialAttack", "stages": 1, "chance": 0.7 }
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Discharge",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 80,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "status", "status": "paralysis", "chance": 0.3 }
+        ],
+        "movePP": 15,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "all",
+        "neverMiss": false
+    },
+    {
+        "name": "Double Shock",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 120,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "removeUserType", "typeRemoved": "Electric" }
+        ],
+        "movePP": 5,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Eerie Impulse",
+        "TMnumber": 0,
+        "moveType": "Status",
+        "movePower": 0,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0,
+        "moveEffects": [
+            { "type": "statReduction", "target": "opponent", "stat": "specialAttack", "stages": -2 }
+        ],
+        "movePP": 15,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Electric Terrain",
+        "TMnumber": 0,
+        "moveType": "Status",
+        "movePower": 0,
+        "moveAccuracy": null,
+        "moveCriticalChance": 0,
+        "moveEffects": [
+            { "type": "terrain", "terrain": "electric", "duration": 5 }
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "field",
+        "neverMiss": true
+    },{
+        "name": "Electro Ball",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 0,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "powerBasedOnSpeedDifference" }
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Electro Drift",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 100,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "boostIfSuperEffective", "multiplier": 1.333 }
+        ],
+        "movePP": 5,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Electro Shot",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 130,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "chargeTurn" }
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Electroweb",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 55,
+        "moveAccuracy": 95,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "statReduction", "target": "allOpponents", "stat": "speed", "stages": -1 }
+        ],
+        "movePP": 15,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "allOpponents",
+        "neverMiss": false
+    },
+    {
+        "name": "Fusion Bolt",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 100,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "boostIfFusionMoveUsed" }
+        ],
+        "movePP": 5,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Magnet Rise",
+        "TMnumber": 0,
+        "moveType": "Status",
+        "movePower": 0,
+        "moveAccuracy": null,
+        "moveCriticalChance": 0,
+        "moveEffects": [
+            { "type": "levitate", "duration": 5 }
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "self",
+        "neverMiss": true
+    },
+    {
+        "name": "Magnetic Flux",
+        "TMnumber": 0,
+        "moveType": "Status",
+        "movePower": 0,
+        "moveAccuracy": null,
+        "moveCriticalChance": 0,
+        "moveEffects": [
+            { "type": "statBoost", "target": "allAllies", "stat": "defense", "stages": 1 },
+            { "type": "statBoost", "target": "allAllies", "stat": "specialDefense", "stages": 1 }
+        ],
+        "movePP": 20,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "allAllies",
+        "neverMiss": true
+    },
+    {
+        "name": "Nuzzle",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 20,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "status", "status": "paralysis", "chance": 1 }
+        ],
+        "movePP": 20,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Overdrive",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 80,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "allOpponents",
+        "neverMiss": false
+    },
+    {
+        "name": "Parabolic Charge",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 65,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "drain", "target": "self", "amount": 0.5 }
+        ],
+        "movePP": 20,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "all",
+        "neverMiss": false
+    },{
+        "name": "Pika Papow",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 0,
+        "moveAccuracy": null,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "powerBasedOnFriendship" }
+        ],
+        "movePP": 20,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": true
+    },
+    {
+        "name": "Plasma Fists",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 100,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "normalMovesBecomeElectric" }
+        ],
+        "movePP": 15,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Rising Voltage",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 70,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "doublePowerInTerrain", "terrain": "electric" }
+        ],
+        "movePP": 20,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Shock Wave",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 60,
+        "moveAccuracy": null,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [],
+        "movePP": 20,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": true
+    },
+    {
+        "name": "Spark",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 65,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "status", "status": "paralysis", "chance": 0.3 }
+        ],
+        "movePP": 20,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Supercell Slam",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 100,
+        "moveAccuracy": 95,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "crashIfMiss", "damageFraction": 0.5 }
+        ],
+        "movePP": 15,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Thunder",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 110,
+        "moveAccuracy": 70,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "status", "status": "paralysis", "chance": 0.3 },
+            { "type": "neverMissInWeather", "weather": "rain" }
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Thunder Cage",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 80,
+        "moveAccuracy": 90,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "trap", "duration": 4 },
+            { "type": "damageOverTime", "amount": 0.125, "duration": 4 }
+        ],
+        "movePP": 15,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Thunder Fang",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 65,
+        "moveAccuracy": 95,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "status", "status": "paralysis", "chance": 0.1 },
+            { "type": "flinch", "target": "opponent", "chance": 0.1 }
+        ],
+        "movePP": 15,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Thunder Punch",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 75,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "status", "status": "paralysis", "chance": 0.1 }
+        ],
+        "movePP": 15,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },{
+        "name": "Thunder Shock",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 40,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "status", "status": "paralysis", "chance": 0.1 }
+        ],
+        "movePP": 30,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Thunder Wave",
+        "TMnumber": 0,
+        "moveType": "Status",
+        "movePower": 0,
+        "moveAccuracy": 90,
+        "moveCriticalChance": 0,
+        "moveEffects": [
+            { "type": "status", "status": "paralysis", "chance": 1 }
+        ],
+        "movePP": 20,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Thunderbolt",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 90,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "status", "status": "paralysis", "chance": 0.1 }
+        ],
+        "movePP": 15,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Thunderclap",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 70,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [],
+        "movePP": 10,
+        "priority": 1,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Volt Switch",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 70,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "switchOut", "target": "self" }
+        ],
+        "movePP": 20,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Volt Tackle",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 120,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "recoil", "target": "self", "amount": 0.33 },
+            { "type": "status", "status": "paralysis", "chance": 0.1 }
+        ],
+        "movePP": 15,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Wild Charge",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 90,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "recoil", "target": "self", "amount": 0.25 }
+        ],
+        "movePP": 15,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Wildbolt Storm",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 100,
+        "moveAccuracy": 80,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "status", "status": "paralysis", "chance": 0.2 },
+            { "type": "statReduction", "target": "allOpponents", "stat": "accuracy", "stages": -1 }
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "allOpponents",
+        "neverMiss": false
+    },
+    {
+        "name": "Zap Cannon",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 120,
+        "moveAccuracy": 50,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "status", "status": "paralysis", "chance": 1 }
+        ],
+        "movePP": 5,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Zing Zap",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 80,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "flinch", "target": "opponent", "chance": 0.3 }
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Zippy Zap",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 50,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.125,
+        "moveEffects": [
+            { "type": "alwaysCritical" },
+            { "type": "priorityBoost", "value": 2 }
+        ],
+        "movePP": 15,
+        "priority": 2,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    }
+]

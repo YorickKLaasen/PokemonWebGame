@@ -1,0 +1,805 @@
+[
+    {
+        "name": "Absorb",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 20,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "drain", "target": "self", "amount": 0.5 }
+        ],
+        "movePP": 25,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Apple Acid",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 80,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "statReduction", "target": "opponent", "stat": "specialDefense", "stages": -1 }
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Aromatherapy",
+        "TMnumber": 0,
+        "moveType": "Status",
+        "movePower": 0,
+        "moveAccuracy": null,
+        "moveCriticalChance": 0,
+        "moveEffects": [
+            { "type": "removeStatus", "target": "allAllies", "status": "all" }
+        ],
+        "movePP": 5,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "allAllies",
+        "neverMiss": true
+    },
+    {
+        "name": "Branch Poke",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 40,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [],
+        "movePP": 40,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Bullet Seed",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 25,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "multiHitVariable", "minHits": 2, "maxHits": 5 }
+        ],
+        "movePP": 30,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Chloroblast",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 150,
+        "moveAccuracy": 95,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "recoil", "target": "self", "amount": 0.5 }
+        ],
+        "movePP": 5,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Cotton Guard",
+        "TMnumber": 0,
+        "moveType": "Status",
+        "movePower": 0,
+        "moveAccuracy": null,
+        "moveCriticalChance": 0,
+        "moveEffects": [
+            { "type": "statBoost", "target": "self", "stat": "defense", "stages": 3 }
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "self",
+        "neverMiss": true
+    },
+    {
+        "name": "Cotton Spore",
+        "TMnumber": 0,
+        "moveType": "Status",
+        "movePower": 0,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0,
+        "moveEffects": [
+            { "type": "statReduction", "target": "opponent", "stat": "speed", "stages": -2 }
+        ],
+        "movePP": 40,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Drum Beating",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 80,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "statReduction", "target": "opponent", "stat": "speed", "stages": -1 }
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Energy Ball",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 90,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "statReduction", "target": "opponent", "stat": "specialDefense", "stages": -1, "chance": 0.1 }
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Flower Trick",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 70,
+        "moveAccuracy": null,
+        "moveCriticalChance": 1,
+        "moveEffects": [
+            { "type": "alwaysCritical" }
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": true
+    },
+    {
+        "name": "Forest's Curse",
+        "TMnumber": 0,
+        "moveType": "Status",
+        "movePower": 0,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0,
+        "moveEffects": [
+            { "type": "addType", "target": "opponent", "newType": "Grass" }
+        ],
+        "movePP": 20,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Frenzy Plant",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 150,
+        "moveAccuracy": 90,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "recharge", "target": "self", "duration": 1 }
+        ],
+        "movePP": 5,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Giga Drain",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 75,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "drain", "target": "self", "amount": 0.5 }
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Grass Knot",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 0,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "powerBasedOnWeight" }
+        ],
+        "movePP": 20,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Grass Pledge",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 80,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "pledgeCombo" }
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Grassy Glide",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 55,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "priorityInTerrain", "terrain": "grassy", "value": 1 }
+        ],
+        "movePP": 20,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Grassy Terrain",
+        "TMnumber": 0,
+        "moveType": "Status",
+        "movePower": 0,
+        "moveAccuracy": null,
+        "moveCriticalChance": 0,
+        "moveEffects": [
+            { "type": "terrain", "terrain": "grassy", "duration": 5 }
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "field",
+        "neverMiss": true
+    },
+    {
+        "name": "Grav Apple",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 80,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "statReduction", "target": "opponent", "stat": "defense", "stages": -1 }
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Horn Leech",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 75,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "drain", "target": "self", "amount": 0.5 }
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Ingrain",
+        "TMnumber": 0,
+        "moveType": "Status",
+        "movePower": 0,
+        "moveAccuracy": null,
+        "moveCriticalChance": 0,
+        "moveEffects": [
+            { "type": "healEachTurn", "target": "self", "amount": 0.0625 },
+            { "type": "preventSwitching", "target": "self" }
+        ],
+        "movePP": 20,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "self",
+        "neverMiss": true
+    },
+    {
+        "name": "Ivy Cudgel",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 100,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.125,
+        "moveEffects": [],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Leaf Blade",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 90,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.125,
+        "moveEffects": [],
+        "movePP": 15,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Leaf Storm",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 130,
+        "moveAccuracy": 90,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "statReduction", "target": "self", "stat": "specialAttack", "stages": -2 }
+        ],
+        "movePP": 5,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Leafage",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 40,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [],
+        "movePP": 40,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Leech Seed",
+        "TMnumber": 0,
+        "moveType": "Status",
+        "movePower": 0,
+        "moveAccuracy": 90,
+        "moveCriticalChance": 0,
+        "moveEffects": [
+            { "type": "seeded" }
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Magical Leaf",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 60,
+        "moveAccuracy": null,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [],
+        "movePP": 20,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": true
+    },
+    {
+        "name": "Matcha Gotcha",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 80,
+        "moveAccuracy": 90,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "drain", "target": "self", "amount": 0.5 },
+            { "type": "status", "status": "burn", "chance": 0.2 }
+        ],
+        "movePP": 15,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "allOpponents",
+        "neverMiss": false
+    },
+    {
+        "name": "Mega Drain",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 40,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "drain", "target": "self", "amount": 0.5 }
+        ],
+        "movePP": 15,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Needle Arm",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 60,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "flinch", "target": "opponent", "chance": 0.3 }
+        ],
+        "movePP": 15,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },{
+        "name": "Petal Blizzard",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 90,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [],
+        "movePP": 15,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "all",
+        "neverMiss": false
+    },
+    {
+        "name": "Petal Dance",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 120,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "lockedMove", "duration": 3 },
+            { "type": "status", "target": "self", "status": "confusion", "afterEffect": true }
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "randomOpponent",
+        "neverMiss": false
+    },
+    {
+        "name": "Power Whip",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 120,
+        "moveAccuracy": 85,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Razor Leaf",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 55,
+        "moveAccuracy": 95,
+        "moveCriticalChance": 0.125,
+        "moveEffects": [],
+        "movePP": 25,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "allOpponents",
+        "neverMiss": false
+    },
+    {
+        "name": "Sappy Seed",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 100,
+        "moveAccuracy": 90,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "seeded" }
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Seed Bomb",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 80,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [],
+        "movePP": 15,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Sleep Powder",
+        "TMnumber": 0,
+        "moveType": "Status",
+        "movePower": 0,
+        "moveAccuracy": 75,
+        "moveCriticalChance": 0,
+        "moveEffects": [
+            { "type": "status", "status": "sleep", "chance": 1 }
+        ],
+        "movePP": 15,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Solar Beam",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 120,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "chargeTurn" },
+            { "type": "skipChargeInWeather", "weather": "sun" }
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Solar Blade",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 125,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "chargeTurn" },
+            { "type": "skipChargeInWeather", "weather": "sun" }
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Spicy Extract",
+        "TMnumber": 0,
+        "moveType": "Status",
+        "movePower": 0,
+        "moveAccuracy": null,
+        "moveCriticalChance": 0,
+        "moveEffects": [
+            { "type": "statBoost", "target": "opponent", "stat": "attack", "stages": 2 },
+            { "type": "statReduction", "target": "opponent", "stat": "defense", "stages": -2 }
+        ],
+        "movePP": 15,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": true
+    },
+    {
+        "name": "Spiky Shield",
+        "TMnumber": 0,
+        "moveType": "Status",
+        "movePower": 0,
+        "moveAccuracy": null,
+        "moveCriticalChance": 0,
+        "moveEffects": [
+            { "type": "protect" },
+            { "type": "contactDamage", "amount": 0.125 }
+        ],
+        "movePP": 10,
+        "priority": 4,
+        "makesContact": false,
+        "targetType": "self",
+        "neverMiss": true
+    },
+    {
+        "name": "Spore",
+        "TMnumber": 0,
+        "moveType": "Status",
+        "movePower": 0,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0,
+        "moveEffects": [
+            { "type": "status", "status": "sleep", "chance": 1 }
+        ],
+        "movePP": 15,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Strength Sap",
+        "TMnumber": 0,
+        "moveType": "Status",
+        "movePower": 0,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0,
+        "moveEffects": [
+            { "type": "healBasedOnTargetAttack" },
+            { "type": "statReduction", "target": "opponent", "stat": "attack", "stages": -1 }
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Stun Spore",
+        "TMnumber": 0,
+        "moveType": "Status",
+        "movePower": 0,
+        "moveAccuracy": 75,
+        "moveCriticalChance": 0,
+        "moveEffects": [
+            { "type": "status", "status": "paralysis", "chance": 1 }
+        ],
+        "movePP": 30,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Synthesis",
+        "TMnumber": 0,
+        "moveType": "Status",
+        "movePower": 0,
+        "moveAccuracy": null,
+        "moveCriticalChance": 0,
+        "moveEffects": [
+            { "type": "healWeatherBased" }
+        ],
+        "movePP": 5,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "self",
+        "neverMiss": true
+    },
+    {
+        "name": "Syrup Bomb",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 60,
+        "moveAccuracy": 85,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "delayedStatReduction", "target": "opponent", "stat": "speed", "stages": -1, "duration": 3 }
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Trailblaze",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 50,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "statBoost", "target": "self", "stat": "speed", "stages": 1 }
+        ],
+        "movePP": 20,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Trop Kick",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 70,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "statReduction", "target": "opponent", "stat": "attack", "stages": -1 }
+        ],
+        "movePP": 15,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Vine Whip",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 45,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [],
+        "movePP": 25,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Wood Hammer",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 120,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "recoil", "target": "self", "amount": 0.33 }
+        ],
+        "movePP": 15,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Worry Seed",
+        "TMnumber": 0,
+        "moveType": "Status",
+        "movePower": 0,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0,
+        "moveEffects": [
+            { "type": "changeAbility", "target": "opponent", "newAbility": "Insomnia" }
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    }
+]

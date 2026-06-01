@@ -1,0 +1,448 @@
+[
+    {
+        "name": "Bone Club",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 65,
+        "moveAccuracy": 85,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "flinch", "target": "opponent", "chance": 0.1 }
+        ],
+        "movePP": 20,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Bone Rush",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 25,
+        "moveAccuracy": 90,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "multiHitVariable", "minHits": 2, "maxHits": 5 }
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Bonemerang",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 50,
+        "moveAccuracy": 90,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "multiHitFixed", "hits": 2 }
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Bulldoze",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 60,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "statReduction", "target": "allOpponents", "stat": "speed", "stages": -1 }
+        ],
+        "movePP": 20,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "allOpponents",
+        "neverMiss": false
+    },
+    {
+        "name": "Dig",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 80,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "chargeTurn" },
+            { "type": "invulnerableTurn" }
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Drill Run",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 80,
+        "moveAccuracy": 95,
+        "moveCriticalChance": 0.125,
+        "moveEffects": [],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Earth Power",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 90,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "statReduction", "target": "opponent", "stat": "specialDefense", "stages": -1, "chance": 0.1 }
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Earthquake",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 100,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "all",
+        "neverMiss": false
+    },
+    {
+        "name": "Fissure",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 0,
+        "moveAccuracy": 30,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "oneHitKO" }
+        ],
+        "movePP": 5,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Headlong Rush",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 120,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "statReduction", "target": "self", "stat": "defense", "stages": -1 },
+            { "type": "statReduction", "target": "self", "stat": "specialDefense", "stages": -1 }
+        ],
+        "movePP": 5,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "High Horsepower",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 95,
+        "moveAccuracy": 95,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Land's Wrath",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 90,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "statReduction", "target": "allOpponents", "stat": "defense", "stages": -1, "chance": 0.1 }
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "allOpponents",
+        "neverMiss": false
+    },
+    {
+        "name": "Magnitude",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 0,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "randomPower", "values": [10, 30, 50, 70, 90, 110, 150] }
+        ],
+        "movePP": 30,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "all",
+        "neverMiss": false
+    },
+    {
+        "name": "Mud Bomb",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 65,
+        "moveAccuracy": 85,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "accuracyReduction", "target": "opponent", "stages": -1, "chance": 0.3 }
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Mud Shot",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 55,
+        "moveAccuracy": 95,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "statReduction", "target": "opponent", "stat": "speed", "stages": -1 }
+        ],
+        "movePP": 15,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Mud Sport",
+        "TMnumber": 0,
+        "moveType": "Status",
+        "movePower": 0,
+        "moveAccuracy": null,
+        "moveCriticalChance": 0,
+        "moveEffects": [
+            { "type": "fieldEffect", "effect": "reduceElectricDamage", "duration": 5 }
+        ],
+        "movePP": 15,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "field",
+        "neverMiss": true
+    },
+    {
+        "name": "Mud-Slap",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 20,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "accuracyReduction", "target": "opponent", "stages": -1 }
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Precipice Blades",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 120,
+        "moveAccuracy": 85,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "allOpponents",
+        "neverMiss": false
+    },
+    {
+        "name": "Rototiller",
+        "TMnumber": 0,
+        "moveType": "Status",
+        "movePower": 0,
+        "moveAccuracy": null,
+        "moveCriticalChance": 0,
+        "moveEffects": [
+            { "type": "statBoost", "target": "allGrounded", "stat": "attack", "stages": 1 },
+            { "type": "statBoost", "target": "allGrounded", "stat": "specialAttack", "stages": 1 }
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "field",
+        "neverMiss": true
+    },
+    {
+        "name": "Sand Attack",
+        "TMnumber": 0,
+        "moveType": "Status",
+        "movePower": 0,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0,
+        "moveEffects": [
+            { "type": "accuracyReduction", "target": "opponent", "stages": -1 }
+        ],
+        "movePP": 15,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Sand Tomb",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 35,
+        "moveAccuracy": 85,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "trap", "duration": 4 },
+            { "type": "residualDamage", "damageFraction": 0.125 }
+        ],
+        "movePP": 15,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Sandsear Storm",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 100,
+        "moveAccuracy": 80,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "status", "status": "burn", "chance": 0.3 }
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "allOpponents",
+        "neverMiss": false
+    },
+    {
+        "name": "Scorching Sands",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 70,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "status", "status": "burn", "chance": 0.3 }
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Shore Up",
+        "TMnumber": 0,
+        "moveType": "Status",
+        "movePower": 0,
+        "moveAccuracy": null,
+        "moveCriticalChance": 0,
+        "moveEffects": [
+            { "type": "heal", "amount": 0.5 },
+            { "type": "healWeatherBoost", "weather": "sandstorm", "amount": 0.667 }
+        ],
+        "movePP": 5,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "self",
+        "neverMiss": true
+    },
+    {
+        "name": "Spikes",
+        "TMnumber": 0,
+        "moveType": "Status",
+        "movePower": 0,
+        "moveAccuracy": null,
+        "moveCriticalChance": 0,
+        "moveEffects": [
+            { "type": "hazard", "effect": "spikes", "maxLayers": 3 }
+        ],
+        "movePP": 20,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "field",
+        "neverMiss": true
+    },
+    {
+        "name": "Stomping Tantrum",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 75,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "doublePowerIfFailedLastMove" }
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Thousand Arrows",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 90,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "hitFlyingTargets" },
+            { "type": "groundTarget" }
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "allOpponents",
+        "neverMiss": false
+    },
+    {
+        "name": "Thousand Waves",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 90,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "trap", "duration": 3 }
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "allOpponents",
+        "neverMiss": false
+    }
+]

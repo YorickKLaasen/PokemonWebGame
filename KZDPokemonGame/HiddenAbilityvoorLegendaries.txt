@@ -1,0 +1,110 @@
+Deoxys*, NeuroForce
+Latias, Psychic Surge
+Latios, Psychic Surge
+Uxie,Telepathy
+Mesprit, Telepathy
+Azelf, Telepathy
+Regigigas, Truant
+Cresselia, Natural Cure
+Cobalion, Intrepid Sword
+Terrakion, Solid Rock
+Virizion, Grassy Surge
+Type: Null, Protean
+Silvally, Protean
+Nihilego, Toxic Debris
+Buzzwole, Iron Fist
+Pheromasa, SpeedBoost
+Xurkitree, Static
+Celesteela, Heavy Metal
+Kartana, Intrepid Sword
+Guzzlord, Anger Point
+Poipole, Corrosion
+Naganadel, Corrosion
+Stakataka, Analytic
+Bacephalon, Aftermath
+Kubfu, Mold Breaker
+Urshifu, Mind's Eye
+Regieleki, Galvanize
+Regidrago, Dragonize
+Glastrier, Ice Body
+Spectrier, Shadow Shield
+Wo-Chien, Stamina
+Chien-Pao, Snow Cloak
+Ting-lu, Rough Skin
+Chi-yu, Flame Body
+Kyogre, Mold Breaker
+Primal Kyogre, Lightning Rod
+Groudon, Mold Breaker
+Primal Groudon, Storm Drain
+Rayquaza, Unnerve
+Mega Rayquaza, Sheer Force
+Reshiram, Flash Fire
+Zekrom, Static
+Kyurem, Snow Warning
+Kyurem-White, Snow Cloak
+Kyurem-Black, Inner Focus
+Xerneas, Misty Surge
+Yveltal, Berserk
+Zygarde, Inner Focus
+Cosmog, Cute Charm
+Cosmoem, Cute Charm
+Solgaleo, Flash Fire
+Lunala, Levitate
+Necrozma, Magic Bounce
+Dusk Mane Necrozma, Tough Claws
+Dawn Wings Necrozma, Mirror Armor
+Ultra Necrozma, Filter
+Zacian, Moxie
+Zamazenta, Friend Guard
+Eternatus, Toxic Chain
+Calyrex, Harvest
+Koraidon, Tough Claws
+Miraidon, Download
+Terapagos, Multiscale
+Mew, Contrary
+Celebi, Curious Medicine
+Jirachi, Comatose
+Phione, Rain Dish
+Manaphy, Rain Dish
+Darkrai, Dark Aura
+Shaymin, Aroma Veil
+Arceus, Neutralizing Gas
+Victini, Vital Spirit
+Keldeo, Intrepid Sword
+Meloetta, Punk Rock
+Genesect, Mega Launcher
+Diancie, Solid Rock
+M Diancie, Dazzling
+Hoopa, Magic Bounce
+Volcanion, Water Absorb
+Magearna, Steelworker
+Marshadow, Iron Fist
+Zeraora, Inner Focus
+Meltan, Light Metal
+Melmetal, Heatproof
+Zarude, Gorilla Tactics
+Pecharunt, Prankster
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

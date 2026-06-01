@@ -1,0 +1,434 @@
+[
+    {
+        "name": "Acrobatics",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 55,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "doublePowerIfNoItem" }
+        ],
+        "movePP": 15,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Aerial Ace",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 60,
+        "moveAccuracy": null,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "neverMiss" }
+        ],
+        "movePP": 20,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": true
+    },
+    {
+        "name": "Aeroblast",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 100,
+        "moveAccuracy": 95,
+        "moveCriticalChance": 0.125,
+        "moveEffects": [],
+        "movePP": 5,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Air Cutter",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 60,
+        "moveAccuracy": 95,
+        "moveCriticalChance": 0.125,
+        "moveEffects": [
+            { "type": "flinch", "target": "opponent", "chance": 0.1 }
+        ],
+        "movePP": 25,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "allOpponents",
+        "neverMiss": false
+    },
+    {
+        "name": "Air Slash",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 75,
+        "moveAccuracy": 95,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "flinch", "target": "opponent", "chance": 0.3 }
+        ],
+        "movePP": 15,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Beak Blast",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 100,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "chargeTurn" },
+            { "type": "statusOnContact", "status": "burn" }
+        ],
+        "movePP": 15,
+        "priority": -3,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Bleakwind Storm",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 100,
+        "moveAccuracy": 80,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "statReduction", "target": "allOpponents", "stat": "speed", "stages": -1, "chance": 0.3 }
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "allOpponents",
+        "neverMiss": false
+    },
+    {
+        "name": "Bounce",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 85,
+        "moveAccuracy": 85,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "chargeTurn" },
+            { "type": "status", "status": "paralysis", "chance": 0.3 }
+        ],
+        "movePP": 5,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Brave Bird",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 120,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "recoil", "target": "self", "amount": 0.33 }
+        ],
+        "movePP": 15,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Chatter",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 65,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "status", "status": "confusion", "chance": 1 }
+        ],
+        "movePP": 20,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Defog",
+        "TMnumber": 0,
+        "moveType": "Status",
+        "movePower": 0,
+        "moveAccuracy": null,
+        "moveCriticalChance": 0,
+        "moveEffects": [
+            { "type": "removeHazards", "target": "all" },
+            { "type": "accuracyReduction", "target": "opponent", "stages": -1 }
+        ],
+        "movePP": 15,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "field",
+        "neverMiss": true
+    },
+    {
+        "name": "Dragon Ascent",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 120,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "statReduction", "target": "self", "stat": "defense", "stages": -1 },
+            { "type": "statReduction", "target": "self", "stat": "specialDefense", "stages": -1 }
+        ],
+        "movePP": 5,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Drill Peck",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 80,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [],
+        "movePP": 20,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Dual Wingbeat",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 40,
+        "moveAccuracy": 90,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "multiHitFixed", "hits": 2 }
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Feather Dance",
+        "TMnumber": 0,
+        "moveType": "Status",
+        "movePower": 0,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0,
+        "moveEffects": [
+            { "type": "statReduction", "target": "opponent", "stat": "attack", "stages": -2 }
+        ],
+        "movePP": 15,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Floaty Fall",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 90,
+        "moveAccuracy": 95,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "flinch", "target": "opponent", "chance": 0.3 }
+        ],
+        "movePP": 15,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Fly",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 90,
+        "moveAccuracy": 95,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "chargeTurn" },
+            { "type": "invulnerableTurn" }
+        ],
+        "movePP": 15,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Gust",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 40,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "doublePowerIfFlyingTarget" }
+        ],
+        "movePP": 35,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Hurricane",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 110,
+        "moveAccuracy": 70,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "status", "status": "confusion", "chance": 0.3 }
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Oblivion Wing",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 80,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "drain", "target": "self", "amount": 0.75 }
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Peck",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 35,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [],
+        "movePP": 35,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Pluck",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 60,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "stealBerry" }
+        ],
+        "movePP": 20,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Roost",
+        "TMnumber": 0,
+        "moveType": "Status",
+        "movePower": 0,
+        "moveAccuracy": null,
+        "moveCriticalChance": 0,
+        "moveEffects": [
+            { "type": "heal", "amount": 0.5 },
+            { "type": "removeFlyingTypeTemporary" }
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "self",
+        "neverMiss": true
+    },
+    {
+        "name": "Sky Attack",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 140,
+        "moveAccuracy": 90,
+        "moveCriticalChance": 0.125,
+        "moveEffects": [
+            { "type": "chargeTurn" },
+            { "type": "flinch", "target": "opponent", "chance": 0.3 }
+        ],
+        "movePP": 5,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Sky Drop",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 60,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            { "type": "removeTargetFromFieldTemporarily" },
+            { "type": "dealDelayedDamage" }
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Tailwind",
+        "TMnumber": 0,
+        "moveType": "Status",
+        "movePower": 0,
+        "moveAccuracy": null,
+        "moveCriticalChance": 0,
+        "moveEffects": [
+            { "type": "speedBoost", "target": "allAllies", "stages": 2, "duration": 4 }
+        ],
+        "movePP": 15,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "field",
+        "neverMiss": true
+    },
+    {
+        "name": "Wing Attack",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 60,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [],
+        "movePP": 35,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    }
+]

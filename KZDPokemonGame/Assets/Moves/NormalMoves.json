@@ -1,0 +1,1577 @@
+[
+    {
+        "name": "Accupressure",
+        "TMnumber": 1,
+        "moveType": "Status",
+        "movePower": 0,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0,
+        "moveEffects": [{"type": "statBoost","target": "self","stat": "random","stages": 2}],
+        "movePP": 30,
+        "priority": 1,
+        "makesContact": false,
+        "targetType": "self",
+        "neverMiss": true
+    },
+    {
+        "name": "After You",
+        "TMnumber": 2,
+        "moveType": "Status",
+        "movePower": 0,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0,
+        "moveEffects": [{"type": "priorityManipulation","target": "ally","amount": 1,"duration": 1}],
+        "movePP": 15,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": true
+    },
+    {
+        "name": "Attract",
+        "TMnumber": 0,
+        "moveType": "Status",
+        "movePower": 0,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0,
+        "moveEffects": [{ "type": "status", "status": "infatuation", "chance": 0.5 }],
+        "movePP": 15,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": true
+    },
+    {
+        "name": "Baton Pass",
+        "TMnumber": 0,
+        "moveType": "Status",
+        "movePower": 0,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0,
+        "moveEffects": [{"type": "passStats","target": "ally","duration": 0}],
+        "movePP": 40,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "self",
+        "neverMiss": true
+    },{
+        "name": "Belly Drum",
+        "TMnumber": 0,
+        "moveType": "Status",
+        "movePower": 0,
+        "moveAccuracy": 0,
+        "moveCriticalChance": 0,
+        "moveEffects": [{"type": "statBoost","target": "self","stat": "attack","stages": 6}],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": true
+    },{
+        "name": "Blood Moon",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 140,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [{"type": "specialEffect","effect": "cannotRepeatConsecutively"}],
+        "movePP": 5,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },{
+        "name": "Body Slam",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 85,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [{ "type": "status", "status": "paralysis", "chance": 0.3 }],
+        "movePP": 15,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },{
+        "name": "Boomburst",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 140,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [{"type": "","target": "","amount": 0,"duration": 0}],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "all",
+        "neverMiss": false
+    },{
+        "name": "Crush Claw",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 75,
+        "moveAccuracy": 95,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [{"type": "statReduction","target": "opponent","stat": "defense","stages": -1}],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },{
+        "name": "Defense Curl",
+        "TMnumber": 0,
+        "moveType": "Status",
+        "movePower": 0,
+        "moveAccuracy": 0,
+        "moveCriticalChance": 0,
+        "moveEffects": [{"type": "statBoost","target": "self","stat": "defense","stages": 1}],
+        "movePP": 40,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": true
+    },{
+        "name": "Double Hit",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 35,
+        "moveAccuracy": 90,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [{"type": "","target": "","amount": 0,"duration": 0}],
+        "multiHit": {"min": 2,"max": 2},
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },{
+        "name": "Double Team",
+        "TMnumber": 0,
+        "moveType": "Status",
+        "movePower": 0,
+        "moveAccuracy": 0,
+        "moveCriticalChance": 0,
+        "moveEffects": [{"type": "statBoost","target": "self","stat": "evasiveness","stages": 1}],
+        "movePP": 15,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": true
+    },{
+        "name": "Double-Edge",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 120,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            {
+                "type": "recoil",
+                "target": "self",
+                "amount": 0.33
+            }
+        ],
+        "movePP": 15,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Encore",
+        "TMnumber": 0,
+        "moveType": "Status",
+        "movePower": 0,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0,
+        "moveEffects": [
+            {
+                "type": "forceRepeat",
+                "target": "opponent",
+                "duration": 3
+            }
+        ],
+        "movePP": 5,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Endeavor",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 0,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0,
+        "moveEffects": [
+            {
+                "type": "hpEqualize",
+                "target": "opponent"
+            }
+        ],
+        "movePP": 5,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Endure",
+        "TMnumber": 0,
+        "moveType": "Status",
+        "movePower": 0,
+        "moveAccuracy": 0,
+        "moveCriticalChance": 0,
+        "moveEffects": [
+            {
+                "type": "survive",
+                "target": "self",
+                "duration": 1
+            }
+        ],
+        "movePP": 10,
+        "priority": 4,
+        "makesContact": false,
+        "targetType": "self",
+        "neverMiss": true
+    },
+    {
+        "name": "Explosion",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 250,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            {
+                "type": "faintSelf",
+                "target": "self"
+            }
+        ],
+        "movePP": 5,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "all",
+        "neverMiss": false
+    },{
+        "name": "Extreme Speed",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 80,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [],
+        "movePP": 5,
+        "priority": 2,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Facade",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 70,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            {
+                "type": "powerBoostIfStatus",
+                "target": "self",
+                "multiplier": 2
+            }
+        ],
+        "movePP": 20,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Fake Out",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 40,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            {
+                "type": "flinch",
+                "target": "opponent",
+                "chance": 1,
+                "condition": "firstTurnOnly"
+            }
+        ],
+        "movePP": 10,
+        "priority": 3,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "False Swipe",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 40,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            {
+                "type": "cannotKO",
+                "target": "opponent"
+            }
+        ],
+        "movePP": 40,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Follow Me",
+        "TMnumber": 0,
+        "moveType": "Status",
+        "movePower": 0,
+        "moveAccuracy": 0,
+        "moveCriticalChance": 0,
+        "moveEffects": [
+            {
+                "type": "redirect",
+                "target": "self",
+                "duration": 1
+            }
+        ],
+        "movePP": 20,
+        "priority": 2,
+        "makesContact": false,
+        "targetType": "self",
+        "neverMiss": true
+    },{
+        "name": "Giga Impact",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 150,
+        "moveAccuracy": 90,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            {
+                "type": "recharge",
+                "target": "self",
+                "duration": 1
+            }
+        ],
+        "movePP": 5,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Glare",
+        "TMnumber": 0,
+        "moveType": "Status",
+        "movePower": 0,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0,
+        "moveEffects": [
+            {
+                "type": "status",
+                "status": "paralysis",
+                "chance": 1
+            }
+        ],
+        "movePP": 30,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": true
+    },
+    {
+        "name": "Growl",
+        "TMnumber": 0,
+        "moveType": "Status",
+        "movePower": 0,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0,
+        "moveEffects": [
+            {
+                "type": "statReduction",
+                "target": "opponent",
+                "stat": "attack",
+                "stages": -1
+            }
+        ],
+        "movePP": 40,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "allOpponents",
+        "neverMiss": false
+    },
+    {
+    "name": "Growth",
+    "TMnumber": 0,
+    "moveType": "Status",
+    "movePower": 0,
+    "moveAccuracy": 0,
+    "moveCriticalChance": 0,
+    "moveEffects": [
+        {
+            "type": "statBoost",
+            "target": "self",
+            "stat": "specialAttack",
+            "stages": 1,
+            "conditional": {
+                "weather": "sun",
+                "bonusStages": 1
+            }
+        }
+    ],
+    "movePP": 20,
+    "priority": 0,
+    "makesContact": false,
+    "targetType": "self",
+    "neverMiss": true
+    },
+    {
+        "name": "Harden",
+        "TMnumber": 0,
+        "moveType": "Status",
+        "movePower": 0,
+        "moveAccuracy": 0,
+        "moveCriticalChance": 0,
+        "moveEffects": [
+            {
+                "type": "statBoost",
+                "target": "self",
+                "stat": "defense",
+                "stages": 1
+            }
+        ],
+        "movePP": 30,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "self",
+        "neverMiss": true
+    },{
+    "name": "Growth",
+    "TMnumber": 0,
+    "moveType": "Status",
+    "movePower": 0,
+    "moveAccuracy": 0,
+    "moveCriticalChance": 0,
+    "moveEffects": [
+        {
+            "type": "statBoost",
+            "target": "self",
+            "stat": "specialAttack",
+            "stages": 1,
+            "conditional": {
+                "weather": "sun",
+                "bonusStages": 1
+            }
+        }
+    ],
+    "movePP": 20,
+    "priority": 0,
+    "makesContact": false,
+    "targetType": "self",
+    "neverMiss": true
+     },{
+        "name": "Headbutt",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 70,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            {
+                "type": "flinch",
+                "target": "opponent",
+                "chance": 0.3
+            }
+        ],
+        "movePP": 15,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Helping Hand",
+        "TMnumber": 0,
+        "moveType": "Status",
+        "movePower": 0,
+        "moveAccuracy": 0,
+        "moveCriticalChance": 0,
+        "moveEffects": [
+            {
+                "type": "damageBoost",
+                "target": "ally",
+                "multiplier": 1.5,
+                "duration": 1
+            }
+        ],
+        "movePP": 20,
+        "priority": 5,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": true
+    },
+    {
+        "name": "Hidden Power",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 60,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            {
+                "type": "dynamicType"
+            }
+        ],
+        "movePP": 15,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Horn Attack",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 65,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [],
+        "movePP": 25,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Howl",
+        "TMnumber": 0,
+        "moveType": "Status",
+        "movePower": 0,
+        "moveAccuracy": 0,
+        "moveCriticalChance": 0,
+        "moveEffects": [
+            {
+                "type": "statBoost",
+                "target": "self",
+                "stat": "attack",
+                "stages": 1
+            }
+        ],
+        "movePP": 40,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "self",
+        "neverMiss": true
+    },{
+        "name": "Hyper Beam",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 150,
+        "moveAccuracy": 90,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            {
+                "type": "recharge",
+                "target": "self",
+                "duration": 1
+            }
+        ],
+        "movePP": 5,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Hyper Fang",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 80,
+        "moveAccuracy": 90,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            {
+                "type": "flinch",
+                "target": "opponent",
+                "chance": 0.1
+            }
+        ],
+        "movePP": 15,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Hyper Voice",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 90,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "allOpponents",
+        "neverMiss": false
+    },
+    {
+        "name": "Leer",
+        "TMnumber": 0,
+        "moveType": "Status",
+        "movePower": 0,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0,
+        "moveEffects": [
+            {
+                "type": "statReduction",
+                "target": "opponent",
+                "stat": "defense",
+                "stages": -1
+            }
+        ],
+        "movePP": 30,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "allOpponents",
+        "neverMiss": false
+    },
+    {
+        "name": "Lock-On",
+        "TMnumber": 0,
+        "moveType": "Status",
+        "movePower": 0,
+        "moveAccuracy": 0,
+        "moveCriticalChance": 0,
+        "moveEffects": [
+            {
+                "type": "guaranteeHit",
+                "target": "opponent",
+                "duration": 1
+            }
+        ],
+        "movePP": 5,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": true
+    },{
+        "name": "Metronome",
+        "TMnumber": 0,
+        "moveType": "Status",
+        "movePower": 0,
+        "moveAccuracy": 0,
+        "moveCriticalChance": 0,
+        "moveEffects": [
+            {
+                "type": "randomMove"
+            }
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "self",
+        "neverMiss": true
+    },
+    {
+        "name": "Minimize",
+        "TMnumber": 0,
+        "moveType": "Status",
+        "movePower": 0,
+        "moveAccuracy": 0,
+        "moveCriticalChance": 0,
+        "moveEffects": [
+            {
+                "type": "statBoost",
+                "target": "self",
+                "stat": "evasiveness",
+                "stages": 2
+            },
+            {
+                "type": "minimizeState",
+                "target": "self"
+            }
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "self",
+        "neverMiss": true
+    },
+    {
+        "name": "Noble Roar",
+        "TMnumber": 0,
+        "moveType": "Status",
+        "movePower": 0,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0,
+        "moveEffects": [
+            {
+                "type": "statReduction",
+                "target": "opponent",
+                "stat": "attack",
+                "stages": -1
+            },
+            {
+                "type": "statReduction",
+                "target": "opponent",
+                "stat": "specialAttack",
+                "stages": -1
+            }
+        ],
+        "movePP": 30,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "allOpponents",
+        "neverMiss": false
+    },
+    {
+        "name": "Odor Sleuth",
+        "TMnumber": 0,
+        "moveType": "Status",
+        "movePower": 0,
+        "moveAccuracy": 0,
+        "moveCriticalChance": 0,
+        "moveEffects": [
+            {
+                "type": "ignoreEvasion",
+                "target": "opponent",
+                "duration": -1
+            },
+            {
+                "type": "removeImmunity",
+                "target": "opponent",
+                "immunity": "ghost"
+            }
+        ],
+        "movePP": 40,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": true
+    },
+    {
+        "name": "Pay Day",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 40,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            {
+                "type": "gainMoney",
+                "target": "self",
+                "amount": "scaled"
+            }
+        ],
+        "movePP": 20,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },{
+        "name": "Population Bomb",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 20,
+        "moveAccuracy": 90,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [],
+        "multiHit": {
+            "min": 1,
+            "max": 10
+        },
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Pound",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 40,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [],
+        "movePP": 35,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Protect",
+        "TMnumber": 0,
+        "moveType": "Status",
+        "movePower": 0,
+        "moveAccuracy": 0,
+        "moveCriticalChance": 0,
+        "moveEffects": [
+            {
+                "type": "protect",
+                "target": "self",
+                "duration": 1,
+                "condition": "failIfRepeated"
+            }
+        ],
+        "movePP": 10,
+        "priority": 4,
+        "makesContact": false,
+        "targetType": "self",
+        "neverMiss": true
+    },
+    {
+        "name": "Psych Up",
+        "TMnumber": 0,
+        "moveType": "Status",
+        "movePower": 0,
+        "moveAccuracy": 0,
+        "moveCriticalChance": 0,
+        "moveEffects": [
+            {
+                "type": "copyStatChanges",
+                "target": "opponent"
+            }
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": true
+    },
+    {
+        "name": "Quick Attack",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 40,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [],
+        "movePP": 30,
+        "priority": 1,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },{
+        "name": "Rapid Spin",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 50,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            {
+                "type": "removeHazards",
+                "target": "self"
+            },
+            {
+                "type": "removeBinding",
+                "target": "self"
+            },
+            {
+                "type": "statBoost",
+                "target": "self",
+                "stat": "speed",
+                "stages": 1
+            }
+        ],
+        "movePP": 40,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Razor Wind",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 80,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.125,
+        "moveEffects": [
+            {
+                "type": "charge",
+                "target": "self",
+                "duration": 1
+            }
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "allOpponents",
+        "neverMiss": false
+    },
+    {
+        "name": "Recover",
+        "TMnumber": 0,
+        "moveType": "Status",
+        "movePower": 0,
+        "moveAccuracy": 0,
+        "moveCriticalChance": 0,
+        "moveEffects": [
+            {
+                "type": "heal",
+                "target": "self",
+                "amount": 0.5
+            }
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "self",
+        "neverMiss": true
+    },
+    {
+        "name": "Revelation Dance",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 90,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            {
+                "type": "userTypeAsMoveType"
+            }
+        ],
+        "movePP": 15,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Revival Blessing",
+        "TMnumber": 0,
+        "moveType": "Status",
+        "movePower": 0,
+        "moveAccuracy": 0,
+        "moveCriticalChance": 0,
+        "moveEffects": [
+            {
+                "type": "revive",
+                "target": "ally",
+                "amount": 0.5
+            }
+        ],
+        "movePP": 1,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": true
+    },{
+        "name": "Rapid Spin",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 50,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            {
+                "type": "removeHazards",
+                "target": "self"
+            },
+            {
+                "type": "removeBinding",
+                "target": "self"
+            },
+            {
+                "type": "statBoost",
+                "target": "self",
+                "stat": "speed",
+                "stages": 1
+            }
+        ],
+        "movePP": 40,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Razor Wind",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 80,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.125,
+        "moveEffects": [
+            {
+                "type": "charge",
+                "target": "self",
+                "duration": 1
+            }
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "allOpponents",
+        "neverMiss": false
+    },
+    {
+        "name": "Recover",
+        "TMnumber": 0,
+        "moveType": "Status",
+        "movePower": 0,
+        "moveAccuracy": 0,
+        "moveCriticalChance": 0,
+        "moveEffects": [
+            {
+                "type": "heal",
+                "target": "self",
+                "amount": 0.5
+            }
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "self",
+        "neverMiss": true
+    },
+    {
+        "name": "Revelation Dance",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 90,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            {
+                "type": "userTypeAsMoveType"
+            }
+        ],
+        "movePP": 15,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Revival Blessing",
+        "TMnumber": 0,
+        "moveType": "Status",
+        "movePower": 0,
+        "moveAccuracy": 0,
+        "moveCriticalChance": 0,
+        "moveEffects": [
+            {
+                "type": "revive",
+                "target": "ally",
+                "amount": 0.5
+            }
+        ],
+        "movePP": 1,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": true
+    },{
+        "name": "Roar",
+        "TMnumber": 0,
+        "moveType": "Status",
+        "movePower": 0,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0,
+        "moveEffects": [
+            {
+                "type": "forceSwitch",
+                "target": "opponent"
+            }
+        ],
+        "movePP": 20,
+        "priority": -6,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Safeguard",
+        "TMnumber": 0,
+        "moveType": "Status",
+        "movePower": 0,
+        "moveAccuracy": 0,
+        "moveCriticalChance": 0,
+        "moveEffects": [
+            {
+                "type": "protectStatus",
+                "target": "allyTeam",
+                "duration": 5
+            }
+        ],
+        "movePP": 25,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "self",
+        "neverMiss": true
+    },
+    {
+        "name": "Scary Face",
+        "TMnumber": 0,
+        "moveType": "Status",
+        "movePower": 0,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0,
+        "moveEffects": [
+            {
+                "type": "statReduction",
+                "target": "opponent",
+                "stat": "speed",
+                "stages": -2
+            }
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Scratch",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 40,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [],
+        "movePP": 35,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Screech",
+        "TMnumber": 0,
+        "moveType": "Status",
+        "movePower": 0,
+        "moveAccuracy": 85,
+        "moveCriticalChance": 0,
+        "moveEffects": [
+            {
+                "type": "statReduction",
+                "target": "opponent",
+                "stat": "defense",
+                "stages": -2
+            }
+        ],
+        "movePP": 40,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },{
+        "name": "Struggle",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 50,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            {
+                "type": "recoil",
+                "target": "self",
+                "amount": 0.25
+            }
+        ],
+        "movePP": 1,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Substitute",
+        "TMnumber": 0,
+        "moveType": "Status",
+        "movePower": 0,
+        "moveAccuracy": 0,
+        "moveCriticalChance": 0,
+        "moveEffects": [
+            {
+                "type": "createSubstitute",
+                "target": "self",
+                "amount": 0.25
+            }
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "self",
+        "neverMiss": true
+    },
+    {
+        "name": "Super Fang",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 0,
+        "moveAccuracy": 90,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            {
+                "type": "fractionalDamage",
+                "target": "opponent",
+                "amount": 0.5
+            }
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Supersonic",
+        "TMnumber": 0,
+        "moveType": "Status",
+        "movePower": 0,
+        "moveAccuracy": 55,
+        "moveCriticalChance": 0,
+        "moveEffects": [
+            {
+                "type": "status",
+                "status": "confusion",
+                "chance": 1
+            }
+        ],
+        "movePP": 20,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Swagger",
+        "TMnumber": 0,
+        "moveType": "Status",
+        "movePower": 0,
+        "moveAccuracy": 85,
+        "moveCriticalChance": 0,
+        "moveEffects": [
+            {
+                "type": "statBoost",
+                "target": "opponent",
+                "stat": "attack",
+                "stages": 2
+            },
+            {
+                "type": "status",
+                "status": "confusion",
+                "chance": 1
+            }
+        ],
+        "movePP": 15,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },{
+        "name": "Struggle",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 50,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            {
+                "type": "recoil",
+                "target": "self",
+                "amount": 0.25
+            }
+        ],
+        "movePP": 1,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Substitute",
+        "TMnumber": 0,
+        "moveType": "Status",
+        "movePower": 0,
+        "moveAccuracy": 0,
+        "moveCriticalChance": 0,
+        "moveEffects": [
+            {
+                "type": "createSubstitute",
+                "target": "self",
+                "amount": 0.25
+            }
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "self",
+        "neverMiss": true
+    },
+    {
+        "name": "Super Fang",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 0,
+        "moveAccuracy": 90,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            {
+                "type": "fractionalDamage",
+                "target": "opponent",
+                "amount": 0.5
+            }
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Supersonic",
+        "TMnumber": 0,
+        "moveType": "Status",
+        "movePower": 0,
+        "moveAccuracy": 55,
+        "moveCriticalChance": 0,
+        "moveEffects": [
+            {
+                "type": "status",
+                "status": "confusion",
+                "chance": 1
+            }
+        ],
+        "movePP": 20,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Swagger",
+        "TMnumber": 0,
+        "moveType": "Status",
+        "movePower": 0,
+        "moveAccuracy": 85,
+        "moveCriticalChance": 0,
+        "moveEffects": [
+            {
+                "type": "statBoost",
+                "target": "opponent",
+                "stat": "attack",
+                "stages": 2
+            },
+            {
+                "type": "status",
+                "status": "confusion",
+                "chance": 1
+            }
+        ],
+        "movePP": 15,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },{
+        "name": "Swift",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 60,
+        "moveAccuracy": 0,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [],
+        "movePP": 20,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "allOpponents",
+        "neverMiss": true
+    },
+    {
+        "name": "Swords Dance",
+        "TMnumber": 0,
+        "moveType": "Status",
+        "movePower": 0,
+        "moveAccuracy": 0,
+        "moveCriticalChance": 0,
+        "moveEffects": [
+            {
+                "type": "statBoost",
+                "target": "self",
+                "stat": "attack",
+                "stages": 2
+            }
+        ],
+        "movePP": 20,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "self",
+        "neverMiss": true
+    },
+    {
+        "name": "Tackle",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 40,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [],
+        "movePP": 35,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Tail Whip",
+        "TMnumber": 0,
+        "moveType": "Status",
+        "movePower": 0,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0,
+        "moveEffects": [
+            {
+                "type": "statReduction",
+                "target": "opponent",
+                "stat": "defense",
+                "stages": -1
+            }
+        ],
+        "movePP": 30,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "allOpponents",
+        "neverMiss": true
+    },
+    {
+        "name": "Take Down",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 90,
+        "moveAccuracy": 85,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            {
+                "type": "recoil",
+                "target": "self",
+                "amount": 0.25
+            }
+        ],
+        "movePP": 20,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },{
+        "name": "Tera Blast",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 80,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Thrash",
+        "TMnumber": 0,
+        "moveType": "Physical",
+        "movePower": 120,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            {
+                "type": "confusion",
+                "target": "self",
+                "chance": 1,
+                "duration": 2
+            }
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": true,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Transform",
+        "TMnumber": 0,
+        "moveType": "Status",
+        "movePower": 0,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0,
+        "moveEffects": [
+            {
+                "type": "transform",
+                "target": "self"
+            }
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": true
+    },
+    {
+        "name": "Tri Attack",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 80,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            {
+                "type": "status",
+                "status": "burn",
+                "chance": 0.2
+            },
+            {
+                "type": "status",
+                "status": "freeze",
+                "chance": 0.2
+            },
+            {
+                "type": "status",
+                "status": "paralysis",
+                "chance": 0.2
+            }
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "single",
+        "neverMiss": false
+    },
+    {
+        "name": "Uproar",
+        "TMnumber": 0,
+        "moveType": "Special",
+        "movePower": 90,
+        "moveAccuracy": 100,
+        "moveCriticalChance": 0.05,
+        "moveEffects": [
+            {
+                "type": "uproar",
+                "target": "allOpponents",
+                "duration": 3
+            }
+        ],
+        "movePP": 10,
+        "priority": 0,
+        "makesContact": false,
+        "targetType": "allOpponents",
+        "neverMiss": false
+    }
+]

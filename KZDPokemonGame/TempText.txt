@@ -1,0 +1,72 @@
+Absorb, Apple Acid, Aromatherapy, Branch Poke, Bullet Seed, Chloroblast, Cotton Guard, Cotton Spore, Drum Beating, Energy Ball, Flower Trick, Forest's Curse, Frenzy Plant, Giga Drain, Grass Knot, Grass Pledge, Grassy Glide, Grassy Terrain, Grav Apple, Horn Leech, Ingrain, Ivy Cudgel, Leaf Blade, Leaf Storm, Leafage, Leech Seed, Magical Leaf, Matcha Gotcha, Mega Drain, Needle Arm, Petal Blizzard, Petal Dance, Power Whip, Razor Leaf, Sappy Seed, Seed Bomb, Sleep Powder, Solar Beam, Solar Blade, Spicy Extract, Spiky Shield, Spore, Strength Sap, Stun Spore, Synthesis, Syrup Bomb, Trailblaze, Trop Kick, Vine Whip, Wood Hammer, Worry Seed.
+
+
+Aurora Beam, Aurora Veil, Avalanche, Blizzard, Freeze Shock, Freeze-Dry, Freezy Frost, Frost Breath, Glacial Lance, Glaciate, Hail,Haze, Ice Ball, Ice Beam, Ice Burn, Ice Fang, Ice Hammer, Ice Punch, Ice Shard, Ice Spinner, Icicle Crash, Icicle Spear, Icy Wind, Mist, Mountain Gale, Powder Snow, Sheer Cold, SnowScape, Triple Axel.
+
+
+Arm Thrust,Aura Sphere,Axe Kick,Body Press,Brick Break, Bulk Up,Circle Throw,Close Combat,Coaching,Collision Course,Combat Torque,Counter,Cross Chop,Detect,Double Kick,Drain Punch,Dynamic Punch,Final Gambit,Focus Blast,Focus Punch,Force Palm,Hammer Arm, High Jump Kick,Karate Chop,Low Kick,Low Sweep, Mach Punch,Meteor Assault,No Retreat,Octolock,Power-Up Punch, Quick Guard, Revenge,Reversal,Rock Smash,Sacred Sword,Secret Sword,Seismic Toss, Sky Uppercut,Storm Throw,Submission,Superpower,Thunderous Kick, Triple Arrows, Triple Kick,Vacuum Wave,Victory Dance,Vital Throw
+
+
+Acid,Acid Armour,Acid Spray,Baneful Bunker,Barb Barrage,Belch,Clear Smog,Coil,Cross Poison, Dire Claw, Gunk Shot, Malignant Chain, Mortal Spin, Noxious Torque, Poison Fang, Poison Gas,Poison Jab,Poison Powder,Poison String,Poison Tail,Shell Side Arm,Sludge,Sludge Bomb, Sludge Wave, Smog,Toxic,Toxic Spikes,Venom Drench, Venoshock.
+
+
+Bone Club,Bone Rush,Bonemerang,Bulldoze,Dig,Drill Run,Earth Power,Earthquake, Fissure, Headlong Rush,High Horsepower,Land's Wrath,Magnitude,Mud Bomb,Mud Shot,Mud Sport,Mud-Slap, Precipice Blades,Rototiller,Sand Attack,Sand Tomb,Sandsear Storm,Scorching Sands,Shore Up,Spikes, Stomping Tantrum,Thousand Arrows,Thousand Waves.
+
+
+Acrobatics,Aerial Ace, Aeroblast,Air Cutter, Air Slash,Beak Blast,Bleakwind Storm, Bounce,Brave Bird,Chatter,Defog,Dragon Ascent,Drill Peck,Dual Wingbeat,Feather Dance,Floaty Fall,Fly,Gust,Hurricane,Oblivion Wing,Peck,Pluck,Roost,Sky Attack,Sky Drop,Tailwind, Wing Attack.
+
+
+
+
+
+
+Agility,Ally Switch,Amnesia,Barrier,Calm Mind,Confusion, Cosmic Power, Dream Eater,Eerie Spell, Esper Wing, Expanding Force, Extrasensory,Freezing Glare, Future Sight,Glitzy Glow, Gravity,Guard Swap,Heal Block,Heal Pulse,Healing Wish,Hypnosis,Imprison,Instruct,Light Screen,Lumina Crash, Lunar Blessing, Lunar Dance,Luster Purge,Magic Coat, Magic Powder,Magic Room,Meditate,Miracle Eye, Mirror Coat,Mist Ball, Mystical Power,Photon Geyser,Power Split,Power Swap,Power Trick,Psybeam,Psychic,Psychic Fangs,Psychic Noise,Psychic Terrain,Psycho Boost,Psycho Cut,Psycho Shift,Psyshield Bash,Psyshock, Psystrike,Psywave,Reflect,Rest,Role Play,Skill Swap,Speed Swap,Stored Power,Synchronoise,Take Heart,Telekinesis,Teleport,Trick,Trick Room,Twin Beam,Wonder Room, Zen Headbutt
+
+
+Attack Order, Bug Bite,Bug Buzz,Defend Order, Fell Stinger, First Impression, Fury Cutter, Heal Order,Infestation, Leech Life,Lunge,Megahorn, Pin Missile,Pollen Puff,Pounce,Powder,Quiver Dance, Rage Powder, Signal Beam,Silk Trap, Silver Wind, Skitter Smack,Spider Web,Steamroller, Sticky Web,String Shot,Struggle Bug,Tail Glow,Twineedle,U-turn,X-Scissor
+
+
+Accelerock,Ancient Power,Diamond Storm,Head Smash,Meteor Beam,Mighty Cleave,Power Gem,Rock Blast , Rock Polish,Rock Slide,Rock Throw, Rock Tomb,Rock Wrecker,Rollout,Salt Cure,Sandstorm, Smack Down, Stealth Rock,Stone Axe,Stone Edge,Tar Shot, Wide Guard
+
+
+Astonish,Astral Barrage,Bitter Malice,Confuse Ray,Curse,Destiny Bond,Grudge,Hex,Infernal Parade,Last Respects,Lick,Moongeist Beam,Night Shade,Nightmare,Ominous Wind,Phantom Force,Poltergeist,Rage Fist,Shadow Ball,Shadow Bone,Shadow Claw,Shadow Force,Shadow Punch,Shadow Sneak,Spectral Thief,Spirit Shackle, Spite, Trick-or-Treat
+
+
+Breaking Swipe, Clanging Scales,Clangorous Soul,Core Enforcer,Draco Meteor,Dragon Breath,Dragon Cheer,Dragon Claw,Dragon Dance,Dragon Darts,Dragon Energy,Dragon Hammer,Dragon Pulse,Dragon Rage,Dragon Rush,Dragon Tail,Dual Chop,Dynamax Cannon,Eternabeam,Glaive Rush,Order Up,Outrage,Roar of Time,Scale Shot,Spacial Rend,Twister
+
+
+Assurance,Baddy Bad,Beat Up,Bite, Brutal Swing,Ceaseless Edge, Comeuppance,Crunch,Dark Pulse,Dark Void,Darkest Lariat,Embargo,Fake Tears,False Surrender,Feint Attack,Fiery Wrath, Flatter,Fling,Foul Play,Hone Claws,Hyperspace Fury,Jaw Lock,Knock Off, Kowtow Cleave,Lash Out,Malicious Moonsault,Memento,Nasty Plot,Night Daze,Night Slash,Obstruct,Parting Shot,Payback, Power Trip, Punishment,Pursuit,Quash,Ruination,Snarl,Snatch,Sucker Punch,Switcheroo, Taunt,Thief,Throat Chop, Topsy-Turvy,Torment,Wicked Blow,Wicked Torque
+
+
+Anchor Shot,Autotomize,Behemoth Bash, Behemoth Blade,Bullet punch,Doom Desire, Double Iron Bash, Flash Cannon, Gear Grind, Gear Up,Gigaton Hammer,Gyro Ball,Hard Press, Heavy Slam,Iron Defense,Iron Head,Iron Tail,King's Shield,Magnet Bomb,Make It Rain,Metal Burst,Metal Claw,Metal Sound,Meteor Mash,Mirror Shot,Shelter,Shift Gear,Smart Strike,Spin Out,Steel Beam,Steel Roller,Steel Wing,Sunsteel Strike,Tachyon Cutter
+
+
+Alluring Voice,Aromatic Mist,Baby-Doll-Eyes,Charm,Crafty Shield,Dazzling Gleam,Decorate,Disarming Voice,Draining Kiss,Fairy Lock,Fairy Wind,Fleur Cannon,Floral Healing,Flower Shield,Geomancy,Light of Ruin,Magical Torque, Misty Explosion,Misty Terrain,Moonblast,Moonlight, Nature's Madness,Play Rough,Sparkly Swirl,Spirit Break, Springtide Storm, Strange Steam,Sweet Kiss
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
